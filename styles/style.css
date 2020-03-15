@@ -1,11 +1,14 @@
+img {
+  display: block;
+}
+
 table {
   border-spacing: 0;
 }
 
 td {
-  height: 50px;
-  width: 50px;
-  text-align: center;
+  height: 45px;
+  width: 45px;
 }
 
 .light {
