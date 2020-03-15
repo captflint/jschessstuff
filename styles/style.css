@@ -1,0 +1,17 @@
+table {
+  border-spacing: 0;
+}
+
+td {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.light {
+  background-color: tan;
+}
+
+.dark {
+  background-color: green;
+}
