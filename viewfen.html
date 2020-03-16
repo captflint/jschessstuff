@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>View FEN</title>
+  <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>View FEN</h1>
+  <h2>Instructions</h2>
+  <p>Paste a valid FEN string into the input box and hit <b>Go!</b> to view
+    a diagram of the position</p>
+  <div id="chessboard"></div>
+  <input id="fen" type="text">
+  <input id="go" type="submit" value="Go!">
+  <script src="scripts/chessboard.js"></script>
+  <script>
+  'use strict';
+  var cb = new Chessboard("chessboard");
+  var clickhandler = function() {
+    let feninput = document.getElementById('fen');
+    cb.renderFEN(feninput.value);
+  };
+  var goinput = document.getElementById('go');
+  goinput.onclick = clickhandler;
+  </script>
+</body>
+</html>

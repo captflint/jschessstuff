@@ -109,20 +109,3 @@ Chessboard.prototype.flip = function() {
   this.flipped = !(this.flipped);
   this.renderFEN(this.FEN);
 };
-
-
-// testing
-var f = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
-var cb = new Chessboard("chessboard");
-cb.renderFEN(f);
-var testhand = function(e) {
-  let t = e.target;
-  if (t.tagName === "IMG") {
-    console.log(t.parentElement.attributes.id.nodeValue);
-  } else {
-    console.log(t.attributes.id.nodeValue);
-  }
-};
-for (const element of cb.div.getElementsByTagName('td')){
-  element.addEventListener('click', testhand);
-}
