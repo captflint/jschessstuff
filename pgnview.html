@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PGN Viewer</title>
+</head>
+<body>
+  <div id="chessboard"></div>
+  <label for="pgninput">Input PGN:</label>
+  <br>
+  <textarea id="pgninput"></textarea>
+  <br>
+  <input id="go" type="button" value="View">
+  <script>
+  var getPGN = function() {
+    console.log(document.getElementById("pgninput").value);
+  };
+  var button = document.getElementById("go");
+  button.addEventListener("click", getPGN);
+  </script>
+</body>
+</html>
