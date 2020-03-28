@@ -6,11 +6,36 @@
 </head>
 <body>
   <div id="chessboard"></div>
+  <pre id="testpgn">
+[Event "Rated Classical game"]
+[Site "https://lichess.org/5LrVPTlh"]
+[Date "2020.03.21"]
+[Round "-"]
+[White "djxejms"]
+[Black "suhan05"]
+[Result "1-0"]
+[UTCDate "2020.03.21"]
+[UTCTime "00:30:36"]
+[WhiteElo "1438"]
+[BlackElo "1444"]
+[WhiteRatingDiff "+19"]
+[BlackRatingDiff "-6"]
+[Variant "Standard"]
+[TimeControl "900+15"]
+[ECO "C20"]
+[Opening "King's Pawn Game"]
+[Termination "Normal"]
+[Annotator "lichess.org"]
+
+1. e4 { [%clk 0:15:00] } e5 { [%clk 0:15:00] } { C20 King's Pawn Game } 2. Ke2 { [%clk 0:15:13] } Nc6 { [%clk 0:15:09] } 3. c3 { [%clk 0:15:07] } Bc5 { [%clk 0:15:19] } 4. Kf3 { [%clk 0:15:03] } d6 { [%clk 0:15:30] } 5. d4 { [%clk 0:15:14] } Nh6 { [%clk 0:15:41] } 6. dxc5 { [%clk 0:15:16] } dxc5 { [%clk 0:15:20] } 7. Qxd8+ { [%clk 0:15:25] } Kxd8 { [%clk 0:15:32] } 8. Bxh6 { [%clk 0:15:30] } gxh6 { [%clk 0:13:21] } 9. Bc4 { [%clk 0:15:39] } Na5 { [%clk 0:11:27] } 10. Bxf7 { [%clk 0:15:44] } b6 { [%clk 0:11:23] } 11. Na3 { [%clk 0:15:48] } Rf8 { [%clk 0:11:36] } 12. Rd1+ { [%clk 0:15:59] } Bd7 { [%clk 0:11:44] } 13. Kg3 { [%clk 0:15:48] } Rxf7 { [%clk 0:11:56] } 14. Nb5 { [%clk 0:15:47] } Ke8 { [%clk 0:12:00] } 15. Nxc7+ { [%clk 0:15:49] } Kf8 { [%clk 0:12:10] } 16. Nxa8 { [%clk 0:16:01] } Rg7+ { [%clk 0:12:14] } 17. Kh4 { [%clk 0:15:48] } Rg4+ { [%clk 0:10:57] } 18. Kh5 { [%clk 0:15:57] } Rxg2 { [%clk 0:11:08] } 19. Rxd7 { [%clk 0:16:07] } { Black resigns. } 1-0
+
+</pre>
   <label for="pgninput">Input PGN:</label>
   <br>
   <textarea id="pgninput"></textarea>
   <br>
   <input id="go" type="button" value="View">
+  <script src="scripts/pgn.js"></script>
   <script>
   var getPGN = function() {
     console.log(document.getElementById("pgninput").value);
